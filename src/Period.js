@@ -11,7 +11,7 @@ class Period extends Component {
         let period = this.props.period;
         console.log(period);
         let iconURL = `http://openweathermap.org/img/wn/${period.weather[0].icon}@2x.png`;        
-        // let url = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
+        
         return ( 
         <div className="period">
             <span className="period_date">{period.dt_txt}</span>

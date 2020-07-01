@@ -44,9 +44,7 @@ class WeatherSystem extends Component {
         // })
 
         let periodTemp = this.state.periods.filter(period => period.dt_txt.substr(11) === "12:00:00");
-        console.log(periodTemp);
         let periodsList = [this.state.periods[0], ...periodTemp];
-        console.log(periodsList);
         let res =  periodsList.map(period => {
             console.log(period);
             return <Period period={period} />
@@ -62,7 +60,6 @@ class WeatherSystem extends Component {
                 </div>
                 <h1>{this.state.city}</h1>
                 {res}
-                                {/* {periodsList} */}
             </div>
          );
     }

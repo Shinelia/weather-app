@@ -14,7 +14,7 @@ class Period extends Component {
 
         return ( 
         <div className="period">
-            <span className="period_date">{period.dt_txt}</span>
+            <span className="period_date">{period.dt_txt.substr(0,10)}</span>
             <img className="period_image" src={iconURL} alt=""></img>
             <span className="period_temp">{Math.round(period.main.temp)}°C</span>
             {/* <span className="period_description">{period.weather[0].description}</span> */}

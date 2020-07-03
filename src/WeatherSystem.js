@@ -46,15 +46,14 @@ class WeatherSystem extends Component {
         let res =  periodsList.map(period => period != null ? <Period period={period}/> : null );
 
         return ( 
-            <div className="weathers">
-                <div className = "choice">
-                    <form onSubmit={this.changeCity} >
-                        <input type="text" id="city" placeholder="Choose a city" name={this.state.city} onChange={this.handleChange}></input>
-                        <button type="submit">Search</button>
+            <div className="container">
+                    <form onSubmit={this.changeCity}>
+                        <input className="input is-info is-rounded" type="text" id="city" placeholder="Choose a city" name={this.state.city} onChange={this.handleChange}></input>
                     </form>
-                </div>
-                <h1>{this.state.city}</h1>
-                <div className="resultat">{res}</div>
+                    <div className="container">
+                        <h1 className="title is-2">{this.state.city}</h1>
+                    </div>
+                    <div className="resultat">{res}</div>
             </div>
          );
     }

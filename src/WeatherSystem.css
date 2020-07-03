@@ -1,11 +1,12 @@
-.weathers{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px;
+.input{
+    margin: 30px;
 }
-
 
 .resultat{
     display: flex;
-    flex-direction: line;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
 }

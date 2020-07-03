@@ -1,3 +1,7 @@
 @import "bulma/sass/utilities/_all.sass";
 @import "bulma/sass/elements/button.sass";
 
+html{
+    background-image: url("./nuages");
+    background-size: cover;
+}
